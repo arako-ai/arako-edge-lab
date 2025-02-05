@@ -9,5 +9,5 @@ export async function POST(request: Request) {
   console.log("request", request);
   console.log("request.body", request.body);
   console.log("request.body", await request.json());
-  return NextResponse.json({ message: "Hi, POST Chatter!", text: "Hello" });
+  return NextResponse.json({ text: "Hi, POST Chatter!" });
 }
